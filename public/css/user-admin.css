@@ -1,0 +1,39 @@
+html, body, .container-fluid, .row {
+    height: 100%;
+}
+.bglogin{
+    background: url(/admin/voyager-assets?path=images%2Fbg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.logintitle{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.loginform {
+    background: white;
+    padding: 20px;
+    min-height: 250px;
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+}
+.sidebar {
+    background-color: #CCCCCC;
+}
+div#app {
+    height: 100%;
+}
+
+@media (min-width: 992px) {
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 1000;
+        display: block;
+        background-color: #CCCCCC;
+    }
+}

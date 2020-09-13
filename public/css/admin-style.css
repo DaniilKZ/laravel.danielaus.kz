@@ -1,0 +1,25 @@
+.form__item {
+    border: 1px solid #76838f30;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.thumbnail {
+    height: 100%;
+    max-height: 330px;
+    margin-bottom: 0 !important;
+}
+
+.thumbnail img {
+    object-fit: cover;
+    height: 100% !important;
+    max-height: 209px;
+}
+.thumbnail .caption {
+    padding: 9px !important; 
+}
+.bgwhite{
+	background-color: white;
+}
+.edit{
+	margin: 9px;
+}

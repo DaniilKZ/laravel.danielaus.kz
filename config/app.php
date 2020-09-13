@@ -52,7 +52,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://localhost'),
+    'url' => env('APP_URL', 'http://127.0.0.1:8000/'),
 
     'asset_url' => env('ASSET_URL', null),
 
@@ -174,6 +174,7 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        Artesaos\SEOTools\Providers\SEOToolsServiceProvider::class,
 
     ],
 
@@ -189,7 +190,14 @@ return [
     */
 
     'aliases' => [
-
+        'SEOMeta'       => Artesaos\SEOTools\Facades\SEOMeta::class,
+        'OpenGraph'     => Artesaos\SEOTools\Facades\OpenGraph::class,
+        'Twitter'       => Artesaos\SEOTools\Facades\TwitterCard::class,
+        'JsonLd'        => Artesaos\SEOTools\Facades\JsonLd::class,
+        'JsonLdMulti'   => Artesaos\SEOTools\Facades\JsonLdMulti::class,
+        // or
+        'SEO' => Artesaos\SEOTools\Facades\SEOTools::class,
+      
         'App' => Illuminate\Support\Facades\App::class,
         'Arr' => Illuminate\Support\Arr::class,
         'Artisan' => Illuminate\Support\Facades\Artisan::class,
